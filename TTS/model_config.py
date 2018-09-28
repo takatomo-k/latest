@@ -1,0 +1,11 @@
+num_mel=80
+num_linear=1025
+emb_size=128
+pre_hidden=128
+dec_hidden=512
+mel_drop=0.3
+outputs_per_step=5
+linear_hidden=512
+hidden_size=512
+griffin_lim_iters=100
+lr=0.0001
