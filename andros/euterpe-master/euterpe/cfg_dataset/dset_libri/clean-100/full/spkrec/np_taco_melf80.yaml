@@ -1,0 +1,19 @@
+feat:
+    all: "/project/nakamura-lab04/Work/student/2016/andros-tj/pandora/rsch/asr/dataset/LibriSpeech/npz/taco_mel_f80/meta/feat.scp"
+    stat: "/project/nakamura-lab04/Work/student/2016/andros-tj/pandora/rsch/asr/dataset/LibriSpeech/npz/taco_mel_f80/meta/feat_stat.pkl"
+    scaler: null
+    info: "/project/nakamura-lab04/Work/student/2016/andros-tj/pandora/rsch/asr/dataset/LibriSpeech/meta/speaker_info.csv"
+    set:
+        train: "/project/nakamura-lab04/Work/student/2016/andros-tj/pandora/rsch/asr/dataset/LibriSpeech/scenario/clean-100/spkrec/train_train-clean-100_key"
+        dev: "/project/nakamura-lab04/Work/student/2016/andros-tj/pandora/rsch/asr/dataset/LibriSpeech/scenario/clean-100/spkrec/dev_train-clean-100_key"
+        test: "/project/nakamura-lab04/Work/student/2016/andros-tj/pandora/rsch/asr/dataset/LibriSpeech/scenario/clean-100/spkrec/test_train-clean-100_key"
+text:
+    all: "/project/nakamura-lab04/Work/student/2016/andros-tj/pandora/rsch/asr/dataset/LibriSpeech/meta/all_char"
+    vocab: "/project/nakamura-lab04/Work/student/2016/andros-tj/pandora/rsch/asr/dataset/LibriSpeech/meta/all_char.dict"
+    set:
+        train: "/project/nakamura-lab04/Work/student/2016/andros-tj/pandora/rsch/asr/dataset/LibriSpeech/scenario/clean-100/spkrec/train_train-clean-100_key"
+        dev: "/project/nakamura-lab04/Work/student/2016/andros-tj/pandora/rsch/asr/dataset/LibriSpeech/scenario/clean-100/spkrec/dev_train-clean-100_key"
+        test: "/project/nakamura-lab04/Work/student/2016/andros-tj/pandora/rsch/asr/dataset/LibriSpeech/scenario/clean-100/spkrec/test_train-clean-100_key"
+misc:
+    info: "/project/nakamura-lab04/Work/student/2016/andros-tj/pandora/rsch/asr/dataset/LibriSpeech/meta/speaker_info.csv"
+    key2spk: "/project/nakamura-lab04/Work/student/2016/andros-tj/pandora/rsch/asr/dataset/LibriSpeech/meta/all_utt2spk.json"

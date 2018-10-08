@@ -1,0 +1,11 @@
+{
+    "feat_train"    : "/home/is/andros-tj/pwork/rsch/spsyn/dataset/LJSpeech/npz/rosa_raw_meanstd/meta/feat_train.scp",
+    "feat_dev"      : "/home/is/andros-tj/pwork/rsch/spsyn/dataset/LJSpeech/npz/rosa_raw_meanstd/meta/feat_dev.scp",
+    "feat_test"     : "/home/is/andros-tj/pwork/rsch/spsyn/dataset/LJSpeech/npz/rosa_raw_meanstd/meta/feat_test.scp",
+    "text_train"    : "/home/is/andros-tj/pwork/rsch/spsyn/dataset/LJSpeech/texts/all_text_char_train",
+    "text_dev"      : "/home/is/andros-tj/pwork/rsch/spsyn/dataset/LJSpeech/texts/all_text_char_dev",
+    "text_test"     : "/home/is/andros-tj/pwork/rsch/spsyn/dataset/LJSpeech/texts/all_text_char_test",
+    "feat_stat"     : "/project/nakamura-lab04/Work/student/2016/andros-tj/pandora/rsch/spsyn/dataset/LJSpeech/npz/rosa_raw_meanstd/meta/feat_stat.pkl",
+    "vocab"         : "/home/is/andros-tj/pwork/rsch/spsyn/dataset/LJSpeech/texts/all_text_char.dict",
+    "scaler"        : "/project/nakamura-lab04/Work/student/2016/andros-tj/pandora/rsch/spsyn/dataset/LJSpeech/npz/rosa_raw_meanstd/meta/feat_meanstd.scaler"
+}

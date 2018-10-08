@@ -1,0 +1,6 @@
+---
+class: "<class 'euterpe.model_tts.seq2seq.tacotron_inverter.\
+    TacotronV1Inverter'>"
+projection_size: [512]
+projection_fn: 'Tanh'
+projection_do: 0.0

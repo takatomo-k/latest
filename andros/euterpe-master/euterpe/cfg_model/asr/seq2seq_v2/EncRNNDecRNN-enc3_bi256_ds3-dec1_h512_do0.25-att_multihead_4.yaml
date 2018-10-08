@@ -1,0 +1,13 @@
+---
+class:
+    "<class 'euterpe.model_asr.seq2seq.v2.encrnn_decrnn_att_asr.\
+    EncRNNDecRNNAtt'>"
+att_cfg:
+    type: "multihead_kvq"
+    kwargs:
+        num_heads: 4
+        proj_dim: 256
+dec_emb_do: 0.25
+dec_rnn_sizes: [512]
+dec_rnn_do: 0.25
+downsampling: [True, True, True]

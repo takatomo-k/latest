@@ -1,0 +1,11 @@
+{
+    "pkg":"rosa",
+    "type":"lograwfbank",
+    "nfft":2048,
+    "winlen":800, 
+    "winstep":200,
+    "delta":0,
+    "preemphasis":0.97,
+    "pre":"norm",
+    "sample_rate":16000
+}

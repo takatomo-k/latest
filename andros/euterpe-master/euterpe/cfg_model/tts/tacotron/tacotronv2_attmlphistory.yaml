@@ -1,0 +1,10 @@
+---
+class: "<class 'model_tts.seq2seq.tacotron_v2.TACOTRONV2'>"
+att_cfg:
+    type: mlp_history
+    kwargs:
+        att_hid_size: 256
+        history_conv_ch: [32, 32, 32]
+        history_conv_ksize: [2, 4, 8]
+dec_in_range: [-80, null]
+use_bn: False

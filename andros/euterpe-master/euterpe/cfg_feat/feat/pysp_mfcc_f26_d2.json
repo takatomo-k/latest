@@ -1,0 +1,6 @@
+{
+    "pkg":"pysp",
+    "type":"mfcc",
+    "nfilt":26,
+    "delta":2
+}

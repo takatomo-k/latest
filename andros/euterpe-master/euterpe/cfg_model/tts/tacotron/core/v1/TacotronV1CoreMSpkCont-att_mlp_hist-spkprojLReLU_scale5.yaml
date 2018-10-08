@@ -1,0 +1,16 @@
+---
+class:
+    "<class 'euterpe.model_tts.seq2seq.tacotron_core.\
+    TacotronV1CoreMSpkContinuous'>"
+att_cfg:
+    type: mlp_history
+    kwargs:
+        att_hid_size: 256
+        history_conv_ch: [32, 32, 32]
+        history_conv_ksize: [2, 4, 8]
+dec_in_range: [-80, null]
+dec_core_gen_size: [512, 512]
+speaker_emb_dim: 128 # deep speaker emb size
+speaker_proj_fn: 'LeakyReLU'
+speaker_emb_scale: 5
+speaker_integrate_fn: null

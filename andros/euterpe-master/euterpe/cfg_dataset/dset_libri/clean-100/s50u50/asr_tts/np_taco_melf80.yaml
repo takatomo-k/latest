@@ -1,0 +1,20 @@
+feat:
+    all: "/project/nakamura-lab04/Work/student/2016/andros-tj/pandora/rsch/asr/dataset/LibriSpeech/npz/taco_mel_f80/meta/feat.scp"
+    stat: "/project/nakamura-lab04/Work/student/2016/andros-tj/pandora/rsch/asr/dataset/LibriSpeech/npz/taco_mel_f80/meta/feat_stat.pkl"
+    scaler: null
+    info: "/project/nakamura-lab04/Work/student/2016/andros-tj/pandora/rsch/asr/dataset/LibriSpeech/meta/speaker_info.csv"
+    set:
+        train: "/project/nakamura-lab04/Work/student/2016/andros-tj/pandora/rsch/asr/dataset/LibriSpeech/scenario/split_spk/clean-100_s50u50/asr_tts/train_s50_key"
+        dev: "/project/nakamura-lab04/Work/student/2016/andros-tj/pandora/rsch/asr/dataset/LibriSpeech/scenario/clean-100/asr_tts/dev-clean_key"
+        test: "/project/nakamura-lab04/Work/student/2016/andros-tj/pandora/rsch/asr/dataset/LibriSpeech/scenario/clean-100/asr_tts/test-clean_key"
+text:
+    all: "/project/nakamura-lab04/Work/student/2016/andros-tj/pandora/rsch/asr/dataset/LibriSpeech/meta/all_char"
+    vocab: "/project/nakamura-lab04/Work/student/2016/andros-tj/pandora/rsch/asr/dataset/LibriSpeech/meta/all_char.dict"
+    set:
+        train: "/project/nakamura-lab04/Work/student/2016/andros-tj/pandora/rsch/asr/dataset/LibriSpeech/scenario/split_spk/clean-100_s50u50/asr_tts/train_s50_key"
+        dev: "/project/nakamura-lab04/Work/student/2016/andros-tj/pandora/rsch/asr/dataset/LibriSpeech/scenario/clean-100/asr_tts/dev-clean_key"
+        test: "/project/nakamura-lab04/Work/student/2016/andros-tj/pandora/rsch/asr/dataset/LibriSpeech/scenario/clean-100/asr_tts/test-clean_key"
+misc:
+    info: "/project/nakamura-lab04/Work/student/2016/andros-tj/pandora/rsch/asr/dataset/LibriSpeech/meta/speaker_info.csv"
+    key2spk: "/project/nakamura-lab04/Work/student/2016/andros-tj/pandora/rsch/asr/dataset/LibriSpeech/meta/all_utt2spk.json"
+    spkvec: "/project/nakamura-lab04/Work/student/2016/andros-tj/pandora/rsch/asr/dataset/LibriSpeech/npz/spkvec/Libri_clean-100_s50_feattaco_melf80-deepspeaker_base-emb128-loss_ce_1-loss_margin_0-opt_adam-lr1e-3-lblsmooth_0/meta/feat.scp"

@@ -1,0 +1,32 @@
+---
+data_pair_cfg: cfg_dataset/dset_ljspeech/s25_u75/s25_taco_mel_f80.yaml
+data_unpair_text_cfg: cfg_dataset/dset_ljspeech/s25_u75/u75_taco_mel_f80.yaml
+data_unpair_speech_cfg: cfg_dataset/dset_ljspeech/s25_u75/u75_taco_mel_f80.yaml
+
+epoch: 50
+iter_per_epoch: 300
+bucket: true
+
+save_interval: 1
+
+---
+# TTS
+tts_batchsize: 15
+tts_loss: [L2]
+tts_group: 4
+tts_lrate: 2.5e-4
+tts_reducelr: {'factor': 0.5, 'patience': 3, 'reset': false}
+tts_grad_clip: 5.0
+tts_cutoff: 1400
+tts_gen_cutoff: 1400
+tts_loss_freq_cfg: null
+tts_spk_sample: uniform
+
+---
+# ASR
+asr_batchsize: 15
+asr_lbl_smooth: 0.05
+asr_lrate: 2.5e-4
+asr_reducelr: {'factor': 0.5, 'patience': 3, 'reset': false}
+asr_cutoff: 1400
+asr_gen_cutoff: 250

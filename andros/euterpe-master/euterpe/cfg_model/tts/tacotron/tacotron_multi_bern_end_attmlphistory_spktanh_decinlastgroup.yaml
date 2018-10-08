@@ -1,0 +1,11 @@
+---
+att_cfg:
+    type: mlp_history
+    kwargs:
+        att_hid_size: 256
+        history_conv_ch: [32, 32, 32]
+        history_conv_ksize: [2, 4, 8]
+speaker_emb_dim: 128
+max_spk: -1
+speaker_act_fn: "tanh"
+dec_in_range: [-80, null]

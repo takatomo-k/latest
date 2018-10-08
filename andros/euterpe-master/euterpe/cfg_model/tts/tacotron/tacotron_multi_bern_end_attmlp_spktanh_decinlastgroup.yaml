@@ -1,0 +1,9 @@
+---
+att_cfg:
+    type: mlp
+    kwargs:
+        att_hid_size: 256
+speaker_emb_dim: 128
+max_spk: -1
+speaker_act_fn: "tanh"
+dec_in_range: [-80, null]

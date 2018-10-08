@@ -1,0 +1,8 @@
+---
+class: "<class 'model_tts.seq2seq.tacotron_v2.TACOTRONV2'>"
+att_cfg:
+    type: mlp
+    kwargs:
+        att_hid_size: 256
+dec_in_range: [-80, null]
+use_bn: False

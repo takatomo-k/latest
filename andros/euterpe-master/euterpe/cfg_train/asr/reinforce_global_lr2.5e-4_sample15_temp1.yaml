@@ -1,0 +1,17 @@
+---
+type: rl
+alpha: 1
+softmax_temp: 1
+sample_size: 15
+max_target: 250
+form: reinforce
+opt: Adam
+lrate: 2.5e-04
+reward:
+  type: global
+  norm_mean: true
+  norm_std: true
+  baseline: null
+sample:
+  gold: true
+  greedy: true

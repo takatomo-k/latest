@@ -1,0 +1,4 @@
+{
+    "text_train" : "/project/nakamura-lab04/Work/student/2016/andros-tj/pandora/rsch/spsyn/dataset/btec_complete/btec1_l10k_u40k/BTEC1_norm_char_train_u40k",
+    "vocab" : "/project/nakamura-lab04/Work/student/2016/andros-tj/pandora/rsch/spsyn/dataset/btec_complete/text/BTECALL_norm_char.dict"
+}

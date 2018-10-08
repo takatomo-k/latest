@@ -1,0 +1,6 @@
+{
+    "pkg":"rosa",
+    "type":"wav",
+    "frame_len":400,
+    "frame_step":160
+}

@@ -1,0 +1,14 @@
+{
+    "feat_train" : "/home/is/andros-tj/pwork/rsch/asr/dataset/timit_hdf5/mfcc/train_meanstd.h5",
+    "feat_dev" : "/home/is/andros-tj/pwork/rsch/asr/dataset/timit_hdf5/mfcc/dev_meanstd.h5",
+    "feat_test" : "/home/is/andros-tj/pwork/rsch/asr/dataset/timit_hdf5/mfcc/test_meanstd.h5",
+    "text_train" : "/home/is/andros-tj/rsch/asr/kaldi/egs/timit/s5/data/train/text_39" ,
+    "text_dev" : "/home/is/andros-tj/rsch/asr/kaldi/egs/timit/s5/data/dev/text_39",
+    "text_test" : "/home/is/andros-tj/rsch/asr/kaldi/egs/timit/s5/data/test/text_39",
+    "ivector_train" : "/home/is/andros-tj/rsch/asr/kaldi/egs/timit/s5/exp_ivec/ivectors_train_dim100/ivector.scp",
+    "ivector_dev" : "/home/is/andros-tj/rsch/asr/kaldi/egs/timit/s5/exp_ivec/ivectors_dev_dim100/ivector.scp",
+    "ivector_test" : "/home/is/andros-tj/rsch/asr/kaldi/egs/timit/s5/exp_ivec/ivectors_test_dim100/ivector.scp",
+    "feat_stat" : "/home/is/andros-tj/pwork/rsch/asr/dataset/timit_hdf5/mfcc/train_meanstd_stat.pkl",
+    "vocab" : "/home/is/andros-tj/rsch/asr/kaldi/egs/timit/s5/data/train/text_39.dict",
+    "scaler" : "/home/is/andros-tj/pwork/rsch/asr/dataset/timit_hdf5/mfcc/train_meanstd.scaler"
+}

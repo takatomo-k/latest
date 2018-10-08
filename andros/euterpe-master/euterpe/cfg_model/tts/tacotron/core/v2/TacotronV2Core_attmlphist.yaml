@@ -1,0 +1,9 @@
+---
+class: "<class 'euterpe.model_tts.seq2seq.tacotron_core.TacotronV2Core'>"
+att_cfg:
+    type: mlp_history
+    kwargs:
+        att_hid_size: 256
+        history_conv_ch: [64, 64, 64]
+        history_conv_ksize: [2, 4, 8]
+dec_in_range: [-80, null]

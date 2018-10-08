@@ -1,0 +1,11 @@
+{
+    "feat_train" : "/project/nakamura-lab04/Work/student/2016/andros-tj/pandora/rsch/spsyn/dataset/btec_complete/btec1_l10k_u40k/h5_norm/lograwspec/btec1_train_l10k_meanstd.h5",
+    "feat_dev" : "/project/nakamura-lab04/Work/student/2016/andros-tj/pandora/rsch/spsyn/dataset/btec_complete/btec1/h5_norm/lograwspec/dev_meanstd.h5",
+    "feat_test" : "/project/nakamura-lab04/Work/student/2016/andros-tj/pandora/rsch/spsyn/dataset/btec_complete/btec1/h5_norm/lograwspec/test_default_meanstd.h5",
+    "text_train" : "/project/nakamura-lab04/Work/student/2016/andros-tj/pandora/rsch/spsyn/dataset/btec_complete/btec1_l10k_u40k/BTEC1_norm_char_train_l10k",
+    "text_dev" : "/project/nakamura-lab04/Work/student/2016/andros-tj/pandora/rsch/spsyn/dataset/btec_complete/text/BTEC1_norm_char_dev",
+    "text_test" : "/project/nakamura-lab04/Work/student/2016/andros-tj/pandora/rsch/spsyn/dataset/btec_complete/text/BTEC_default_test_char",
+    "feat_stat" : "/project/nakamura-lab04/Work/student/2016/andros-tj/pandora/rsch/spsyn/dataset/btec_complete/btec1/h5_norm/lograwspec/train_meanstd_stat.pkl",
+    "vocab" : "/project/nakamura-lab04/Work/student/2016/andros-tj/pandora/rsch/spsyn/dataset/btec_complete/text/BTECALL_norm_char.dict",
+    "scaler" : "/project/nakamura-lab04/Work/student/2016/andros-tj/pandora/rsch/spsyn/dataset/btec_complete/btec1/h5_norm/lograwspec/train_meanstd.scaler"
+}

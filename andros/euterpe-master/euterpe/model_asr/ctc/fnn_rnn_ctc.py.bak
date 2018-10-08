@@ -1,0 +1,107 @@
+
+import sys
+import time
+
+import numpy as np
+import json
+
+# pytorch #
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+
+from torch.autograd import Variable
+
+# torchev #
+from torchev.generator import generator_rnn
+
+# utilbox #
+from utilbox.config_util import ConfigParser
+
+class FNN_RNN_CTC(nn.Module) :
+    def __init__(self, in_size, n_class, fnn_sizes, rnn_sizes, 
+            do_fnn=0.0, do_rnn=0.0, 
+            downsampling=None,
+            fnn_act='tanh', rnn_cfgs='{"type":"lstm", "bi":true}',
+            train=True,
+            ) :
+        super(FNN_RNN_CTC, self).__init__()
+
+        self.in_size = in_size
+        self.n_class = n_class
+        self.fnn_sizes = fnn_sizes
+        self.rnn_sizes = rnn_sizes
+        self.downsampling = downsampling
+        self.do_fnn = do_fnn if isinstance(do_fnn, list) and len(do_fnn) == len(fnn_sizes) else list(do_fnn)*len(self.fnn_sizes)
+        self.do_rnn = do_rnn if isinstance(do_rnn, list) and len(do_rnn) == len(rnn_sizes) else list(do_rnn)*len(self.rnn_sizes)
+        self.fnn_act = fnn_act
+        self.rnn_cfgs = rnn_cfgs
+
+        # modules #
+        self.fnn = nn.ModuleList()
+        prev_size = in_size
+        for ii in range(len(fnn_sizes)) :
+            self.fnn.append(nn.Linear(prev_size, fnn_sizes[ii]))
+            prev_size = fnn_sizes[ii]
+        
+        self.rnn = nn.ModuleList()
+        _rnn_cfgs = ConfigParser.list_parser(rnn_cfgs, len(rnn_sizes))
+        for ii in range(len(rnn_sizes)) :
+            _rnn_cfg = {}
+            _rnn_cfg['type'] = _rnn_cfgs[ii]['type']
+            _rnn_cfg['args'] = [prev_size, rnn_sizes[ii], 1, True, False, 0, _rnn_cfgs[ii]['bi']]
+            self.rnn.append(generator_rnn(_rnn_cfg))
+             
+            prev_size = rnn_sizes[ii] * (2 if _rnn_cfgs[ii]['bi'] else 1)
+
+        self.pre_softmax = nn.Linear(prev_size, n_class)
+        pass
+
+    def __call__(self, x, mask=None) :
+        """
+        x : (batch x seq x ndim) 
+        mask : (batch x seq)
+        """
+        batchsize, seqlen, ndim = x.size()
+        # convert to seq x batch x ndim #
+        x = x.transpose(0, 1)
+        
+        ### FNN ###
+        # convert shape for FNN #
+        res = x.contiguous().view(seqlen * batchsize, ndim)
+        
+        for ii in range(len(self.fnn_sizes)) :
+            res = getattr(F, self.fnn_act)(self.fnn[ii](res))
+            res = F.dropout(res, self.do_fnn[ii], training=self.training)
+         
+        ### RNN ###
+        # convert shape for RNN #
+        res = res.view(seqlen, batchsize, -1)
+        for ii in range(len(self.rnn_sizes)) :
+            res, _ = self.rnn[ii](res)
+            res = F.dropout(res, self.do_rnn[ii], training=self.training)
+
+        ### PRE SOFTMAX ###
+        seqlen_final, batchsize, ndim_final = res.size()
+        res = res.view(seqlen_final * batchsize, ndim_final)
+
+        res = self.pre_softmax(res)
+        res = res.view(seqlen_final, batchsize, -1) 
+        
+        return res
+
+
+    def get_config(self) :
+        return {'class':str(self.__class__),
+                'in_size':self.in_size,
+                'n_class':self.n_class,
+                'fnn_sizes':self.fnn_sizes,
+                'rnn_sizes':self.rnn_sizes,
+                'do_fnn':self.do_fnn,
+                'do_rnn':self.do_rnn,
+                'downsampling':self.downsampling,
+                'fnn_act':self.fnn_act,
+                'rnn_cfgs':self.rnn_cfgs,
+                }
+
+    pass

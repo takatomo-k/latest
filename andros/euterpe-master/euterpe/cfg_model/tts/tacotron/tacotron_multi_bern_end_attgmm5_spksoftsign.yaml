@@ -1,0 +1,10 @@
+---
+att_cfg:
+    type: gmm
+    kwargs:
+        n_mixtures: 5
+        normalize_alpha: true
+        bprop_prev: false
+speaker_emb_dim: 128
+max_spk: -1
+speaker_act_fn: "softsign"

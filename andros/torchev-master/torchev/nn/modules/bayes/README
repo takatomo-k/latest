@@ -1,0 +1,3 @@
+bayesian module for posterior approximation (mostly used for VI D_KL)
+
+TODO : use pyro instead of this package

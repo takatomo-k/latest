@@ -1,0 +1,12 @@
+{
+    "feat_train" : "/home/is/andros-tj/pwork/rsch/asr/dataset/wsj_raw_hdf5/WSJ_TRAIN_SI84_NORM_W400S160.h5",
+    "feat_dev" : "/home/is/andros-tj/pwork/rsch/asr/dataset/wsj_raw_hdf5/WSJ_TEST_DEV93_NORM_W400S160.h5",
+    "feat_test" : "/home/is/andros-tj/pwork/rsch/asr/dataset/wsj_raw_hdf5/WSJ_TEST_EVAL92_NORM_W400S160.h5",
+    "text_train" : "/home/is/andros-tj/rsch/asr/kaldi/egs/wsj/s5/data/train_si84/text_char" ,
+    "text_dev" : "/home/is/andros-tj/rsch/asr/kaldi/egs/wsj/s5/data/test_dev93/text_char",
+    "text_test" : "/home/is/andros-tj/rsch/asr/kaldi/egs/wsj/s5/data/test_eval92/text_char",
+    "ivector_train" : "/home/is/andros-tj/rsch/asr/kaldi/egs/wsj/s5/exp_ivec/ivectors_train_si84_dim100/ivector.scp",
+    "ivector_dev" : "/home/is/andros-tj/rsch/asr/kaldi/egs/wsj/s5/exp_ivec/ivectors_test_dev93_dim100/ivector.scp",
+    "ivector_test" : "/home/is/andros-tj/rsch/asr/kaldi/egs/wsj/s5/exp_ivec/ivectors_test_eval92_dim100/ivector.scp",
+    "vocab" : "/home/is/andros-tj/rsch/asr/kaldi/egs/wsj/s5/data/train_si284/text_char.dict"
+}

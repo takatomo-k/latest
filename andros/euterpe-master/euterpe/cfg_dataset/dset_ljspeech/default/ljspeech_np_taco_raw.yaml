@@ -1,0 +1,16 @@
+feat:
+    all: "/home/is/andros-tj/pwork/rsch/spsyn/dataset/LJSpeech/npz/taco_raw/meta/feat.scp"
+    stat: "/home/is/andros-tj/pwork/rsch/spsyn/dataset/LJSpeech/npz/taco_raw/meta/feat_stat.pkl"
+    scaler: null
+    info: null
+    set:
+        train: "/home/is/andros-tj/pwork/rsch/spsyn/dataset/LJSpeech/scenario/default/train_key"
+        dev: "/home/is/andros-tj/pwork/rsch/spsyn/dataset/LJSpeech/scenario/default/dev_key"
+        test: "/home/is/andros-tj/pwork/rsch/spsyn/dataset/LJSpeech/scenario/default/test_key"
+text:
+    all: "/home/is/andros-tj/pwork/rsch/spsyn/dataset/LJSpeech/texts/all_char"
+    vocab: "/home/is/andros-tj/pwork/rsch/spsyn/dataset/LJSpeech/texts/all_char.dict"
+    set:
+        train: "/home/is/andros-tj/pwork/rsch/spsyn/dataset/LJSpeech/scenario/default/train_key"
+        dev: "/home/is/andros-tj/pwork/rsch/spsyn/dataset/LJSpeech/scenario/default/dev_key"
+        test: "/home/is/andros-tj/pwork/rsch/spsyn/dataset/LJSpeech/scenario/default/test_key"

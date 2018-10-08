@@ -1,0 +1,5 @@
+# client
+This folder contains (multiple) scripts for hosting flask-based service for ASR & TTS inference
+
+Requirements : 
++ flask

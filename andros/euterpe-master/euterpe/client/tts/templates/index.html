@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tacotron Multispeaker BernEnd V2</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-10 text-center">
+                <div class="row">
+                    <div class="col">
+                    <h1>Tacotron Multispeaker BernEnd V2</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                    <h4>Paper : Listening while Speaking: Speech Chain with Deep Learning <a href="https://arxiv.org/abs/1707.04879">[pdf]</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col"></div>
+        </div>
+
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-5">
+                <form action="synth" method="POST"> 
+                    <div class="form-group" >
+                        <label for="text">Text: </label>
+                        <input name="text" id="text" class="form-control" type="text" placeholder="type text / phoneme here" size="50">
+                    </div>
+                    <div class="form-group">
+                        <label for="spk_id">Speaker ID: </label>
+                        <select id="spk_id" name="spk_id">
+                            {% for spk_id in list_spk_id %}
+                            <option>{{ spk_id }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="col text-center">
+                        <button class="btn btn-primary text-center" type="submit"> Synth </button>
+                    </div>
+                </form>
+            </div>
+            <div class="col">
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col"></div>
+            <div class="col-3 text-center">
+            {% if synth_wav is not none %}
+                <audio controls>
+                    <source src="data:audio/wav;base64,{{ synth_wav }}" type="audio/wav">
+                    Your browser does not support the audio element.
+            {% elif error is not none %}
+                Error: {{ error }}
+            {% else %}
+               No synthesized wav yet ! 
+            {% endif %}
+            </div>
+            <div class="col"></div>
+        </audio>
+        </div>
+        <div class="row mt-5">
+            <div class="col"></div>
+            <div class="col-4 text-center">
+                <div class="col-12">
+                    <h4>text example</h4>
+                </div>
+                <div class="col-12 text-center">
+                    <ul class="list-group">
+                        {% for example in list_example %}
+                            <li class="list-group-item text-center">{{ example }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col text-center">
+                            <h4>
+                            valid vocabulary
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {% for vocab in list_vocab %}
+                        <div class="col-4 text-center">
+                            {{ vocab }}
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <div class="col"></div>
+        </div>
+        <footer class="footer">
+            © {front, back}-end implemented by Andros Tjandra 
+        </footer>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+</html>

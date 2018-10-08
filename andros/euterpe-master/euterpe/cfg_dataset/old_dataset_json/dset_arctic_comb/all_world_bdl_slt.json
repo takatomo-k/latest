@@ -1,0 +1,7 @@
+{
+    "feat_train"    : "/project/nakamura-lab04/Work/student/2016/andros-tj/pandora/rsch/spsyn/dataset/CMUARCTIC/combined/h5_norm/world/all_bdl_slt_meanstd.h5",
+    "feat_stat"     : "/project/nakamura-lab04/Work/student/2016/andros-tj/pandora/rsch/spsyn/dataset/CMUARCTIC/combined/h5_norm/world/all_bdl_slt_meanstd_stat.pkl",
+    "scaler"        : "/project/nakamura-lab04/Work/student/2016/andros-tj/pandora/rsch/spsyn/dataset/CMUARCTIC/combined/h5_norm/world/all_bdl_slt_meanstd.scaler",
+    "info"          : "/project/nakamura-lab04/Work/student/2016/andros-tj/pandora/rsch/spsyn/dataset/CMUARCTIC/combined/scp/all_bdl_slt.info",
+    "pair_info"     : "/home/is/andros-tj/pwork/rsch/spsyn/dataset/CMUARCTIC/combined/scp/pair_bdl_slt.info"
+}

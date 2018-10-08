@@ -1,0 +1,9 @@
+---
+class: "<class 'model_tts.seq2seq.tacotron.TACOTRONBernoulliEndMultiSpk'>"
+att_cfg:
+    type: gmm
+    kwargs:
+        n_mixtures: 5
+        normalize_alpha: true
+        bprop_prev: false
+dec_in_range: [-80, null]

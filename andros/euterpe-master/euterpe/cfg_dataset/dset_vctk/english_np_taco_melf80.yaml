@@ -1,0 +1,19 @@
+feat:
+    all: "/home/is/andros-tj/pwork/rsch/spsyn/dataset/VCTK-Corpus/npz/taco_mel_f80/meta/feat.scp"
+    stat: "/home/is/andros-tj/pwork/rsch/spsyn/dataset/VCTK-Corpus/npz/taco_mel_f80/meta/feat_stat.pkl"
+    scaler: null
+    info: "/home/is/andros-tj/pwork/rsch/spsyn/dataset/VCTK-Corpus/speaker_info.csv"
+    set:
+        train: "/home/is/andros-tj/pwork/rsch/spsyn/dataset/VCTK-Corpus/scenario/english_scenario/train_key.txt"
+        dev: "/home/is/andros-tj/pwork/rsch/spsyn/dataset/VCTK-Corpus/scenario/english_scenario/dev_key.txt"
+        test: "/home/is/andros-tj/pwork/rsch/spsyn/dataset/VCTK-Corpus/scenario/english_scenario/test_key.txt"
+text:
+    all: "/home/is/andros-tj/pwork/rsch/spsyn/dataset/VCTK-Corpus/txt/text_char_nosil"
+    vocab: "/home/is/andros-tj/pwork/rsch/spsyn/dataset/VCTK-Corpus/txt/text_char_nosil.dict"
+    set:
+        train: "/home/is/andros-tj/pwork/rsch/spsyn/dataset/VCTK-Corpus/scenario/english_scenario/train_key.txt"
+        dev: "/home/is/andros-tj/pwork/rsch/spsyn/dataset/VCTK-Corpus/scenario/english_scenario/dev_key.txt"
+        test: "/home/is/andros-tj/pwork/rsch/spsyn/dataset/VCTK-Corpus/scenario/english_scenario/test_key.txt"
+misc:
+    info: "/home/is/andros-tj/pwork/rsch/spsyn/dataset/VCTK-Corpus/speaker_info.csv"
+    key2spk: "/home/is/andros-tj/pwork/rsch/spsyn/dataset/VCTK-Corpus/utt2spk.json"

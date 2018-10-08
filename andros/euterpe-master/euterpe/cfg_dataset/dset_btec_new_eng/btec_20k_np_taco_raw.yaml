@@ -1,0 +1,16 @@
+feat:
+    all: "/project/nakamura-lab04/Work/student/2016/andros-tj/pandora/rsch/spsyn/dataset/btec_complete/modern_format/taco_raw/meta/feat.scp"
+    stat: "/home/is/andros-tj/pwork/rsch/spsyn/dataset/btec_complete/modern_format/taco_raw/meta/feat_stat.pkl"
+    scaler: null
+    info: null
+    set:
+        train: "/home/is/andros-tj/pwork/rsch/spsyn/dataset/btec_complete/modern_format/btec_20k_train_key"
+        dev: "/home/is/andros-tj/pwork/rsch/spsyn/dataset/btec_complete/modern_format/btec_20k_dev_key"
+        test: "/home/is/andros-tj/pwork/rsch/spsyn/dataset/btec_complete/modern_format/btec_20k_test_key"
+text:
+    all: "/home/is/andros-tj/pwork/rsch/spsyn/dataset/btec_complete/modern_format/text/btec1_norm_char.txt"
+    vocab: "/home/is/andros-tj/pwork/rsch/spsyn/dataset/btec_complete/modern_format/text/btec1_norm_char.txt.dict"
+    set:
+        train: "/home/is/andros-tj/pwork/rsch/spsyn/dataset/btec_complete/modern_format/btec_20k_train_key"
+        dev: "/home/is/andros-tj/pwork/rsch/spsyn/dataset/btec_complete/modern_format/btec_20k_dev_key"
+        test: "/home/is/andros-tj/pwork/rsch/spsyn/dataset/btec_complete/modern_format/btec_20k_test_key"

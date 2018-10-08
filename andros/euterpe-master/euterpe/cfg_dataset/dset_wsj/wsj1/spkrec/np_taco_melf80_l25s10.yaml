@@ -1,0 +1,19 @@
+feat:
+    all: "/home/is/andros-tj/pwork/rsch/asr/dataset/WSJ_npz/wsj1/taco_mel_f80_l25_s10/meta/feat.scp"
+    stat: "/home/is/andros-tj/pwork/rsch/asr/dataset/WSJ_npz/wsj1/taco_mel_f80_l25_s10/meta/feat_stat.pkl"
+    scaler: null
+    info: "/home/is/andros-tj/pwork/rsch/asr/dataset/WSJ_npz/speaker_info.csv"
+    set:
+        train: "/home/is/andros-tj/pwork/rsch/asr/dataset/WSJ_npz/scenario/wsj1/spkrec/train_si284_train_key.txt"
+        dev: "/home/is/andros-tj/pwork/rsch/asr/dataset/WSJ_npz/scenario/wsj1/spkrec/train_si284_dev_key.txt"
+        test: "/home/is/andros-tj/pwork/rsch/asr/dataset/WSJ_npz/scenario/wsj1/spkrec/train_si284_test_key.txt"
+text:
+    all: "/home/is/andros-tj/pwork/rsch/asr/dataset/WSJ_npz/txt/text_char_wsj1"
+    vocab: "/home/is/andros-tj/pwork/rsch/asr/dataset/WSJ_npz/txt/text_char.dict"
+    set:
+        train: "/home/is/andros-tj/pwork/rsch/asr/dataset/WSJ_npz/scenario/wsj1/spkrec/train_si284_train_key.txt"
+        dev: "/home/is/andros-tj/pwork/rsch/asr/dataset/WSJ_npz/scenario/wsj1/spkrec/train_si284_dev_key.txt"
+        test: "/home/is/andros-tj/pwork/rsch/asr/dataset/WSJ_npz/scenario/wsj1/spkrec/train_si284_test_key.txt"
+misc:
+    info: "/home/is/andros-tj/pwork/rsch/asr/dataset/WSJ_npz/speaker_info.csv"
+    key2spk: "/home/is/andros-tj/pwork/rsch/asr/dataset/WSJ_npz/all_wsj1_utt2spk.json"

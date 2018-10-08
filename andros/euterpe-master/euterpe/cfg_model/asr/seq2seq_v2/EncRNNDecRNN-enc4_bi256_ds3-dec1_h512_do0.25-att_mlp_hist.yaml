@@ -1,0 +1,16 @@
+---
+class:
+    "<class 'euterpe.model_asr.seq2seq.v2.encrnn_decrnn_att_asr.\
+    EncRNNDecRNNAtt'>"
+att_cfg:
+    type: mlp_history
+    kwargs:
+        att_hid_size: 256
+        history_conv_ch: [32, 32, 32, 32]
+        history_conv_ksize: [8, 16, 32, 64]
+enc_rnn_sizes: [256, 256, 256, 256]
+dec_emb_do: 0.25
+dec_emb_tied_weight: True
+dec_rnn_sizes: [512]
+dec_rnn_do: 0.25
+downsampling: [False, True, True, True]

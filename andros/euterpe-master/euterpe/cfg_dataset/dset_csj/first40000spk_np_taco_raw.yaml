@@ -1,0 +1,16 @@
+feat:
+    all: "/project/nakamura-lab07/Work/andros-tj/okeanos/speechtext/CSJ/npz/taco_raw/meta/feat.scp"
+    stat: "/project/nakamura-lab07/Work/andros-tj/okeanos/speechtext/CSJ/npz/taco_raw/meta/feat_stat.pkl"
+    scaler: null
+    info: "/project/nakamura-lab07/Work/andros-tj/okeanos/speechtext/CSJ/speaker_info.csv"
+    set:
+        train: "/project/nakamura-lab07/Work/andros-tj/okeanos/speechtext/CSJ/scenario/first40000spk/train_key.txt"
+        dev: "/project/nakamura-lab07/Work/andros-tj/okeanos/speechtext/CSJ/scenario/first40000spk/dev_key.txt"
+        test: "/project/nakamura-lab07/Work/andros-tj/okeanos/speechtext/CSJ/scenario/first40000spk/test_key.txt"
+text:
+    all: "/project/nakamura-lab07/Work/andros-tj/okeanos/speechtext/CSJ/txt/text_phoneme_good"
+    vocab: "/project/nakamura-lab07/Work/andros-tj/okeanos/speechtext/CSJ/txt/text_phoneme_good.dict"
+    set:
+        train: "/project/nakamura-lab07/Work/andros-tj/okeanos/speechtext/CSJ/scenario/first40000spk/train_key.txt"
+        dev: "/project/nakamura-lab07/Work/andros-tj/okeanos/speechtext/CSJ/scenario/first40000spk/dev_key.txt"
+        test: "/project/nakamura-lab07/Work/andros-tj/okeanos/speechtext/CSJ/scenario/first40000spk/test_key.txt"

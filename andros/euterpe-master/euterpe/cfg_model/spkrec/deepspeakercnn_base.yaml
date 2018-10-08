@@ -1,0 +1,7 @@
+---
+out_emb_size: 512
+channel_size: [64, 128, 256, 512]
+kernel_size: [[3, 5], [3, 5], [3, 5], [3, 5]]
+stride: [[2, 2], [2, 2], [1, 2], [1, 1]]
+conv_fn_act: 'leaky_relu'
+pool_fn: 'avg'

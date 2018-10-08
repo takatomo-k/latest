@@ -1,0 +1,11 @@
+{
+    "feat_train" : "/project/nakamura-lab05/Work/yuri-sh/h5_norm/pysp_logmelspec/train_meanstd.h5",
+    "feat_dev" : "/project/nakamura-lab05/Work/yuri-sh/h5_norm/pysp_logmelspec/dev_meanstd.h5",
+    "feat_test" : "/project/nakamura-lab05/Work/yuri-sh/h5_norm/pysp_logmelspec/test_meanstd.h5",
+    "text_train" : "/project/nakamura-lab05/Work/yuri-sh/h5_norm/split_scp/train_labels",
+    "text_dev" : "/project/nakamura-lab05/Work/yuri-sh/h5_norm/split_scp/dev_labels",
+    "text_test" : "/project/nakamura-lab05/Work/yuri-sh/h5_norm/split_scp/test_labels",
+    "feat_stat" : "/project/nakamura-lab05/Work/yuri-sh/h5_norm/pysp_logmelspec/all_meanstd_stat.pkl",
+    "vocab" : "/project/nakamura-lab05/Work/yuri-sh/h5_norm/split_scp/all_labels.dict",
+    "scaler" : "/project/nakamura-lab05/Work/yuri-sh/h5_norm/pysp_logmelspec/all_meanstd.scaler"
+}

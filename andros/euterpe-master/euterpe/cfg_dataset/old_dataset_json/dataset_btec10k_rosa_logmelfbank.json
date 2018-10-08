@@ -1,0 +1,11 @@
+{
+    "feat_train" : "/home/is/andros-tj/pwork/rsch/spsyn/dataset/btec/h5/rosa_logmelfbank/btec10k_en_train_rosa_logmelfbankf40_meanstd.h5",
+    "feat_dev" : "/home/is/andros-tj/pwork/rsch/spsyn/dataset/btec/h5/rosa_logmelfbank/btec10k_en_dev_rosa_logmelfbankf40_meanstd.h5",
+    "feat_test" : "/home/is/andros-tj/pwork/rsch/spsyn/dataset/btec/h5/rosa_logmelfbank/btec10k_en_test_rosa_logmelfbankf40_meanstd.h5",
+    "text_train" : "/home/is/andros-tj/pwork/rsch/spsyn/dataset/btec/btec10k/text_char_train",
+    "text_dev" : "/home/is/andros-tj/pwork/rsch/spsyn/dataset/btec/btec10k/text_char_dev",
+    "text_test" : "/home/is/andros-tj/pwork/rsch/spsyn/dataset/btec/btec10k/text_char_test",
+    "feat_stat" : "/home/is/andros-tj/pwork/rsch/spsyn/dataset/btec/h5/rosa_logmelfbank/btec10k_en_rosa_logmelfbankf40_meanstd_stat.pkl",
+    "vocab" : "/home/is/andros-tj/pwork/rsch/spsyn/dataset/btec/btec10k/text_char_train.dict",
+    "scaler" : "/home/is/andros-tj/pwork/rsch/spsyn/dataset/btec/h5/rosa_logmelfbank/btec10k_en_train_rosa_logmelfbankf40_meanstd.scaler"
+}

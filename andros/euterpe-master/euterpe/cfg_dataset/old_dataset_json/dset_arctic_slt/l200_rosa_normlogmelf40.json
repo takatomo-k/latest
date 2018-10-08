@@ -1,0 +1,11 @@
+{
+    "feat_train"    : "/project/nakamura-lab04/Work/student/2016/andros-tj/pandora/rsch/spsyn/dataset/CMUARCTIC/cmu_us_slt_arctic/l200_u800/h5_norm/logmelspec_f40/train_l200_meanstd.h5",
+    "feat_dev"      : "/project/nakamura-lab04/Work/student/2016/andros-tj/pandora/rsch/spsyn/dataset/CMUARCTIC/cmu_us_slt_arctic/h5_norm/logmelspec_f40/dev_meanstd.h5",
+    "feat_test"     : "/project/nakamura-lab04/Work/student/2016/andros-tj/pandora/rsch/spsyn/dataset/CMUARCTIC/cmu_us_slt_arctic/h5_norm/logmelspec_f40/test_meanstd.h5",
+    "text_train"    : "/project/nakamura-lab04/Work/student/2016/andros-tj/pandora/rsch/spsyn/dataset/CMUARCTIC/cmu_us_slt_arctic/l200_u800/text_char_train_l200",
+    "text_dev"      : "/project/nakamura-lab04/Work/student/2016/andros-tj/pandora/rsch/spsyn/dataset/CMUARCTIC/cmu_us_slt_arctic/text/text_char_dev",
+    "text_test"     : "/project/nakamura-lab04/Work/student/2016/andros-tj/pandora/rsch/spsyn/dataset/CMUARCTIC/cmu_us_slt_arctic/text/text_char_test",
+    "feat_stat"     : "/project/nakamura-lab04/Work/student/2016/andros-tj/pandora/rsch/spsyn/dataset/CMUARCTIC/cmu_us_slt_arctic/h5_norm/logmelspec_f40/train_meanstd_stat.pkl",
+    "vocab"         : "/project/nakamura-lab04/Work/student/2016/andros-tj/pandora/rsch/spsyn/dataset/btec_complete/text/BTECALL_norm_char.dict",
+    "scaler"        : "/project/nakamura-lab04/Work/student/2016/andros-tj/pandora/rsch/spsyn/dataset/CMUARCTIC/cmu_us_slt_arctic/h5_norm/logmelspec_f40/train_meanstd.scaler"
+}

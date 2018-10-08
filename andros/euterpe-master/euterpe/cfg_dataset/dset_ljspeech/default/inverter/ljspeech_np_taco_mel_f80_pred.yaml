@@ -1,0 +1,9 @@
+feat:
+    all: "/home/is/andros-tj/pwork/rsch/spsyn/dataset/LJSpeech/tmp_result_npz/ljspeech_feattaco-TacotronV1Core-baseline_attmlphistory-loss_l2-lr1.0e-3-gradclip5.0-cut1000-declast80/meta/feat.scp"
+    stat: "/home/is/andros-tj/pwork/rsch/spsyn/dataset/LJSpeech/tmp_result_npz/ljspeech_feattaco-TacotronV1Core-baseline_attmlphistory-loss_l2-lr1.0e-3-gradclip5.0-cut1000-declast80/meta/feat_stat.pkl"
+    scaler: null
+    info: null
+    set:
+        train: "/home/is/andros-tj/pwork/rsch/spsyn/dataset/LJSpeech/scenario/default/train_key"
+        dev: "/home/is/andros-tj/pwork/rsch/spsyn/dataset/LJSpeech/scenario/default/dev_key"
+        test: "/home/is/andros-tj/pwork/rsch/spsyn/dataset/LJSpeech/scenario/default/test_key"

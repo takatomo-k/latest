@@ -1,0 +1,6 @@
+---
+class: "<class 'euterpe.model_tts.seq2seq.tacotron_inverter.\
+    TacotronMultiConvInverter'>"
+conv_bank_filter: [128, 128]
+conv_fn_act: 'leaky_relu'
+conv_do: 0.25

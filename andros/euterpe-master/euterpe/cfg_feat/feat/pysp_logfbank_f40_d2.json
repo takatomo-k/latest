@@ -1,0 +1,6 @@
+{
+    "pkg":"pysp",
+    "type":"logfbank",
+    "nfilt":40,
+    "delta":2
+}
